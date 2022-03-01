@@ -1,0 +1,23 @@
+import { carDriving } from './components/car/carDriving';
+import { createCarSubmit } from './components/car/createCar';
+import { generateRandomCarListen } from './components/car/generateRandomCar';
+import { removeCar } from './components/car/removeCar';
+import { selectCar, updateCarSubmit } from './components/car/updateCar';
+import { garagePaginationListen, pageListen } from './components/navigation';
+import { raceListen } from './components/race';
+import { sortListen } from './components/winner/sortWinners';
+import { updatePageGarage } from './pages/garage/garage';
+import { render } from './pages/renderPages';
+
+render();
+await updatePageGarage();
+pageListen();
+generateRandomCarListen();
+garagePaginationListen();
+carDriving();
+removeCar();
+selectCar();
+updateCarSubmit();
+createCarSubmit();
+raceListen();
+sortListen();
